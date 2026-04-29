@@ -1,6 +1,6 @@
-"use client";
-import Form from "./Form";
+import { redirect } from 'next/navigation';
 
-export default function Page() {
-  return <Form />;
+export default function RootPage() {
+  // Melakukan redirect otomatis ke route /form
+  redirect('/form');
 }
